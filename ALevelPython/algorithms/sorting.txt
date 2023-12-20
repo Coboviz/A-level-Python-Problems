@@ -1,0 +1,23 @@
+Problem:
+
+User inputs a number n - which represents a number of elements in the array.
+Afterwards user inputs the elements of this array.
+Your task is to sort this array into an ascending order (prev < next). Suppose
+that all elements are different
+
+DECLARE n, i, j, Temp : INTEGER
+DECLARE List : ARRAY[1:1000] OF INTEGER
+INPUT n
+FOR i <- 1 TO n
+    INPUT List[i]
+NEXT i
+
+FOR i <- 1 TO n
+    FOR j <- 1 to n-1
+        IF List[j] < List[j+1]
+            Temp <- List[j]
+            List[j] <- List[j+1]
+            List[j+1] <- Temp
+        ENDIF
+    NEXT j
+NEXT i
