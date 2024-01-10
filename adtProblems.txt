@@ -1,0 +1,45 @@
+Problem 1: Stacks and Queues
+a) Stack Implementation:
+Implement a stack in Python using a list. Provide functions for push, pop, and check if the stack is empty.
+
+b) Queue Implementation:
+Implement a queue in Python using a list. Provide functions for enqueue, dequeue, and check if the queue is empty.
+
+Problem 2: Linked Lists
+a) Linked List Node:
+Define a class representing a node in a singly linked list. The class should have a data attribute and a next attribute pointing to the next node in the list.
+
+b) Linked List Operations:
+Implement functions to insert a new node at the beginning and end of a singly linked list.
+
+Problem 3: Trees
+a) Binary Tree:
+Define a class representing a binary tree node. Each node should have a data attribute, as well as left and right attributes pointing to its left and right children.
+
+b) Tree Traversal:
+Implement functions for in-order, pre-order, and post-order traversal of a binary tree.
+
+Problem 4: Hash Tables
+a) Hash Table Implementation:
+Implement a basic hash table in Python. Include functions for inserting a key-value pair, retrieving the value for a given key, and handling collisions using chaining.
+
+b) Hash Function Design:
+Design a hash function suitable for hashing strings. Explain why the chosen approach is effective.
+
+Problem 5: Graphs
+a) Graph Representation:
+Implement a graph using an adjacency list representation. Provide functions for adding vertices and edges.
+
+b) Depth-First Search:
+Implement a depth-first search (DFS) algorithm for a graph. Provide the order in which vertices are visited.
+
+Problem 6: Sorting and Searching
+a) Sorting Algorithm:
+Implement the quicksort algorithm in Python. Test your implementation on a list of integers.
+
+b) Binary Search:
+Implement a binary search function to find the index of a target element in a sorted list.
+
+Problem 7: Priority Queues
+a) Priority Queue Implementation:
+Implement a priority queue using a heap. Provide functions for inserting elements with priorities and extracting the element with the highest priority
