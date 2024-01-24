@@ -1,0 +1,12 @@
+A beautiful sunset
+50
+50
+yellow
+An ugly sunset
+60
+60  
+green
+A dog chasing its own tail
+1920
+1090
+black
