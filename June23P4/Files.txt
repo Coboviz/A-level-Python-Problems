@@ -1,0 +1,44 @@
+A procedure CreateFiles() will take two parameters: 
+• a string representing a file name 
+• an integer representing the number of files to be created.
+
+The procedure will create the number of text files specified
+
+ Each file is given a different name.  Each file name is formed by 
+ concatenating the file name with a suffix based on the file number. 
+ The suffix is always three characters.
+
+  For example, the call CreateFiles("TestData", 3) 
+  would result in the creation of the three files, 
+  TestData.001, TestData.002 and TestData.003.
+
+   Each file will contain a single line. For example, file TestData.002 would contain the string:    
+   This is File TestData.002  Write pseudocode for CreateFiles().
+
+ Assume both parameters are valid and that the integer value is between 1 and 999, inclusive.
+
+PROCEDURE CreateFiles(FileName : STRING, NumberOfFiles)
+
+    DECLARE i : INTEGER
+    DECLARE CurrentFileName : STRING
+
+    FOR i <- 1 TO NumberOfFiles
+
+        IF i < 10 THEN
+            CurrentFileName <- FileName & ".00" & NUM_TO_STR(i)
+        ENDIF
+
+        IF i > 9 AND i < 100 THEN
+            CurrentFileName <- FileName & ".0" & NUM_TO_STR(i)
+        ENDIF
+
+        IF i > 99 AND i < 1000 THEN
+            CurrentFileName <- FileName & "." & NUM_TO_STR(i)
+        ENDIF
+
+        OPENFILE CurrentFileName FOR WRITE
+        WRITEFILE CurrentFileName, "This is File " & CurrentFileName
+        CLOSEFILE CurrentFileName
+    NEXT i
+
+ENDPROCEDURE
